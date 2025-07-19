@@ -1,0 +1,45 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "ВЭЛКО: отправка заявок",
+      "description": "API для отправки заявки в Google Таблицу клубного дома ВЭЛКО",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "https://script.google.com/macros/s/AKfycbzkheLnqW21QhoXf8PzKBhKYQCC3GHbO6ttkos648ydrl3PkHyG_dbD0M1T_IUx1Vnj4Q/exec"
+      }
+    ],
+    "paths": {
+      "/": {
+        "post": {
+          "operationId": "sendRequest",
+          "summary": "Отправка заявки",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "услуга": { "type": "string" },
+                    "дата": { "type": "string" },
+                    "время": { "type": "string" },
+                    "квартира": { "type": "string" },
+                    "клиент": { "type": "string" },
+                    "комментарий": { "type": "string" }
+                  }
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Успешно добавлено"
+            }
+          }
+        }
+      }
+    }
+  }
+  
