@@ -1,0 +1,15 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Заявки ВЭЛКО",
+    "name_for_model": "velko_requests",
+    "description_for_human": "Добавляет заявку в таблицу клуба ВЭЛКО",
+    "description_for_model": "Use this tool to submit service requests (e.g., cleaning, coworking) to the Velko spreadsheet.",
+    "auth": {
+      "type": "none"
+    },
+    "api": {
+      "type": "openapi",
+      "url": "https://anbrat-rus.github.io/velko-gpt-api/openapi.json"
+    }
+  }
+  
