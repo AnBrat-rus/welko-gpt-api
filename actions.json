@@ -9,7 +9,7 @@
     },
     "api": {
       "type": "openapi",
-      "url": "https://anbrat-rus.github.io/velko-gpt-api/openapi.json"
+      "url": "https://anbrat-rus.github.io/welko-gpt-api/openapi.json"
     }
   }
   
